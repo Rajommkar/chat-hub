@@ -1,31 +1,34 @@
-# 💬 ChatBot Hub
+# 💬 AI-Powered ChatBot Hub
 
-A full-stack, real-time chat application built with **Node.js** and **Socket.io**. This project features an automated, asynchronous ChatBot that can respond to conversational prompts and fetch real-time data from an external public API.
+A full-stack, real-time chat application built with **Node.js**, **Socket.io**, and **Google Gemini AI**. This project features an intelligent ChatBot capable of natural language processing, answering complex queries, and fetching real-time data.
 
 ## ✨ Features
 
-* **Real-Time Bidirectional Communication:** Powered by WebSockets (Socket.io) for instant messaging without page reloads.
-* **Smart ChatBot:** An automated bot that parses user input and responds contextually.
-* **External API Integration:** The bot asynchronously fetches live data from the Official Joke API using `async/await`.
-* **Dynamic UI Feedback:** Includes real-time "ChatBot is typing..." indicators.
-* **Quality of Life:** Seamless UI with auto-scrolling and "Enter-key" to send functionality.
+* **LLM Integration:** Powered by the **Google Gemini 2.5 Flash** model for intelligent, context-aware conversations.
+* **Real-Time Communication:** Uses WebSockets (Socket.io) for instant, low-latency messaging.
+* **Hybrid Logic:** Combines custom API fetching (Official Joke API) with Generative AI fallback.
+* **Secure Architecture:** Implements `dotenv` for protected API key management and a clean `.gitignore` for professional repository standards.
+* **Dynamic UI:** Features "AI is typing..." indicators and auto-scrolling for a seamless user experience.
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** HTML5, CSS3, Vanilla JavaScript
+* **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 * **Backend:** Node.js, Express.js
-* **WebSockets:** Socket.io
-* **Data Fetching:** Native Node Fetch API
+* **AI/ML:** Google Generative AI SDK
+* **Real-Time:** Socket.io
+* **Environment:** Dotenv (Secure Secret Management)
 
 ## 📂 Project Structure
 
 ```text
 chat-hub/
 ├── client/                 # Frontend UI and logic
-│   ├── index.html          # Chat interface
-│   ├── style.css           # Custom styling and animations
-│   └── script.js           # Client-side Socket.io logic
+│   ├── index.html          
+│   ├── style.css           
+│   └── script.js           
 ├── server/                 # Backend infrastructure
-│   ├── index.js            # Express server and Bot logic
-│   └── package.json        # Node dependencies
+│   ├── .env                # Secret API Keys (Git-ignored)
+│   ├── index.js            # Node/Express & AI Logic
+│   └── package.json        
+├── .gitignore              # Security rules
 └── README.md
