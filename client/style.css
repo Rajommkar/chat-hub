@@ -9,3 +9,10 @@ header { padding: 15px; background: #333; text-align: center; border-bottom: 1px
 input { flex: 1; padding: 10px; border: none; border-radius: 5px; background: #333; color: white; outline: none; }
 button { padding: 10px 15px; border: none; border-radius: 5px; background: #007bff; color: white; cursor: pointer; font-weight: bold; }
 button:hover { background: #0056b3; }
+#feedback {
+    padding: 0 15px;
+    font-size: 0.85rem;
+    color: #aaaaaa;
+    font-style: italic;
+    height: 20px; /* Keeps the chat from jumping up and down */
+}
